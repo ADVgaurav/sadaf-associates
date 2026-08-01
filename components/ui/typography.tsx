@@ -1,0 +1,6 @@
+import type { ComponentPropsWithoutRef } from "react";
+import { cn } from "@/lib/utils";
+export function Heading({ level = 2, className, ...props }: ComponentPropsWithoutRef<"h2"> & { level?: 1 | 2 | 3 | 4 }) { const Tag = `h${level}` as const; const sizes = { 1: "text-4xl leading-[1.1] sm:text-5xl lg:text-6xl", 2: "text-3xl leading-[1.15] sm:text-4xl", 3: "font-sans text-xl leading-snug", 4: "font-sans text-lg leading-snug" }; return <Tag className={cn("font-display tracking-[-0.02em] text-foreground", sizes[level], className)} {...props} />; }
+export function Paragraph({ className, ...props }: ComponentPropsWithoutRef<"p">) { return <p className={cn("text-base leading-7 text-[hsl(var(--text-secondary))]", className)} {...props} />; }
+export function Divider({ className, ...props }: ComponentPropsWithoutRef<"hr">) { return <hr className={cn("border-0 border-t border-border", className)} {...props} />; }
+export function SectionHeading({ eyebrow, title, description, className }: { eyebrow?: string; title: string; description?: string; className?: string }) { return <div className={cn("max-w-[var(--content-readable)] space-y-4", className)}>{eyebrow && <p className="text-xs font-medium uppercase tracking-[0.16em] text-accent">{eyebrow}</p>}<Heading>{title}</Heading>{description && <Paragraph>{description}</Paragraph>}</div>; }
