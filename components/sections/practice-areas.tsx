@@ -18,42 +18,42 @@ const practiceAreas = [
     title: "Corporate Advisory",
     description:
       "Strategic legal guidance for companies, founders and growing businesses.",
-    href: "/practice-areas",
+    href: "/contact",
   },
   {
     icon: FileText,
     title: "Contract Drafting",
     description:
       "Professionally drafted agreements and commercial documentation.",
-    href: "/practice-areas",
+    href: "/contact",
   },
   {
     icon: Scale,
     title: "Dispute Resolution",
     description:
       "Support in civil and commercial disputes with practical legal solutions.",
-    href: "/practice-areas",
+    href: "/contact",
   },
   {
     icon: ScrollText,
     title: "Legal Documentation",
     description:
       "Legal notices, affidavits, deeds and documentation assistance.",
-    href: "/practice-areas",
+    href: "/contact",
   },
   {
     icon: ShieldCheck,
     title: "Compliance Support",
     description:
       "Business compliance and regulatory guidance for organizations.",
-    href: "/practice-areas",
+    href: "/contact",
   },
   {
     icon: MessagesSquare,
     title: "Legal Consultation",
     description:
       "Professional legal consultation tailored to your requirements.",
-    href: "/practice-areas",
+    href: "/contact",
   },
 ];
 

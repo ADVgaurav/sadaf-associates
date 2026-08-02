@@ -170,11 +170,11 @@ const [error, setError] = useState("");
                 </p>
 
                 <h3 className="mt-3 text-2xl font-semibold text-white">
-                  Monday – Saturday
+                  Monday – Friday
                 </h3>
 
                 <p className="mt-3 text-white/70">
-                  9:00 AM – 7:00 PM
+                  10:00 AM – 7:00 PM
                 </p>
 
               </div>

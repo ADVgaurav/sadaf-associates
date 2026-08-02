@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const practiceAreas = [
   {
     title: "Corporate & Commercial Law",
@@ -83,9 +85,11 @@ export function PracticeGrid() {
         </div>
 
         <div className="mt-14 grid gap-8 md:grid-cols-2">
-                      {practiceAreas.map((area) => (
-            <div
+
+          {practiceAreas.map((area) => (
+            <Link
               key={area.title}
+              href="/contact"
               className="
                 group
                 relative
@@ -110,8 +114,7 @@ export function PracticeGrid() {
               </div>
 
               <div className="relative">
-
-                <div className="mb-6 h-1 w-16 rounded-full bg-[#C9A45C] transition-all duration-500 group-hover:w-24" />
+                                <div className="mb-6 h-1 w-16 rounded-full bg-[#C9A45C] transition-all duration-500 group-hover:w-24" />
 
                 <h3 className="font-cinzel text-2xl font-semibold text-white">
                   {area.title}
@@ -143,11 +146,12 @@ export function PracticeGrid() {
 
               </div>
 
-            </div>
+            </Link>
           ))}
 
         </div>
-                {/* CTA */}
+
+        {/* CTA */}
 
         <div className="mt-20">
 
@@ -172,8 +176,7 @@ export function PracticeGrid() {
             </p>
 
             <div className="mt-12">
-
-              <a
+                            <a
                 href="/contact"
                 className="inline-flex items-center rounded-full border border-[#C9A45C] bg-[#C9A45C] px-8 py-4 font-medium text-black transition-all duration-300 hover:scale-[1.03] hover:bg-[#d8b46b]"
               >
@@ -191,4 +194,3 @@ export function PracticeGrid() {
     </section>
   );
 }
-        
