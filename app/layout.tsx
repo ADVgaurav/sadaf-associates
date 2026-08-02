@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Cinzel, Inter } from "next/font/google";
 
-// TypeScript may complain about side-effect CSS imports in some environments.
-// @ts-expect-error Allow importing global CSS
 import "./globals.css";
 
 import { Footer } from "@/components/footer/footer";
